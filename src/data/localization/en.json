@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "logo": "RYU, CHAEHWA",
+    "menuList": [{ "title": "1", "path": "1" }],
+    "langs": [
+      { "title": "KO", "value": 0 },
+      { "title": "EN", "value": 1 }
+    ]
+  }
+}

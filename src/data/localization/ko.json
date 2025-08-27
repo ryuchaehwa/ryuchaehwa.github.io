@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "logo": "유채화",
+    "menuList": [{ "title": "1", "path": "1" }],
+    "langs": [
+      { "title": "한국어", "value": 0 },
+      { "title": "영어", "value": 1 }
+    ]
+  }
+}
