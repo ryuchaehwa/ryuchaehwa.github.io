@@ -15,7 +15,7 @@ const app = createApp(App);
 
 app.directive("animateonscroll", AnimateOnScroll);
 
-app.component("font-awesome-icon", FontAwesomeIcon);
+app.component("FontAwesomeIcon", FontAwesomeIcon);
 
 app.use(PrimeVue, { theme: { preset: Aura } });
 app.use(router);

@@ -23,7 +23,7 @@ import menus from '../../data/menus'
 <style scoped>
 /* ls: left side */
 .ls-container {
-    position: absolute;
+    position: fixed;
     width: 80px;
     color: #94A199;
     font-size: 35px;

@@ -1,6 +1,6 @@
 <template>
     <div class="pi-container">
-        personal info
+        <div class="pi-title">웰컴</div>
     </div>
 </template>
 
@@ -8,10 +8,14 @@
 
 <style scoped>
 /* pi: personal info */
-
 .pi-container {
     color: #fff;
-    /* height: 100% */
-    /* height: 100vh; */
+    height: 100vh;
+    width: 100%;
+}
+
+.pi-title {
+    font-family: MuseumCulturalFoundationClassic;
+    font-size: 8rem
 }
 </style>

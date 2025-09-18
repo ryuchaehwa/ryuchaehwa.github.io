@@ -2,9 +2,15 @@
 @import "tailwindcss-primeui";
 
 .card {
-    background: var(--card-bg);
-    border: var(--card-border);
-    padding: 2rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+  background: var(--card-bg);
+  border: var(--card-border);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: YeogiOttaeJalnan;
+  font-size: 2rem;
+  color: #fff;
 }

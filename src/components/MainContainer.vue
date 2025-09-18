@@ -1,39 +1,33 @@
 <template>
   <LeftSide></LeftSide>
+  <LangSet></LangSet>
   <div class="main-container">
-    <div>
+    <div style="width: 90%; min-width: 90%; max-width: 90%; padding: 80px 40px 0 40px;">
       <PersonalInfo></PersonalInfo>
       <SkillsInfo></SkillsInfo>
       <CareerInfo></CareerInfo>
       <ProjectsInfo></ProjectsInfo>
       <PostsContainer></PostsContainer>
-      <PicsContainer></PicsContainer>
     </div>
   </div>
 </template>
 
 <script setup>
 import LeftSide from './common/LeftSide.vue';
+import LangSet from './common/LangSet.vue';
 import PersonalInfo from './main/PersonalInfo.vue';
 import SkillsInfo from './main/SkillsInfo.vue';
 import CareerInfo from './main/CareerInfo.vue'
 import ProjectsInfo from './main/ProjectsInfo.vue'
 import PostsContainer from './main/PostsContainer.vue'
-import PicsContainer from './main/PicsContainer.vue'
 </script>
 
 <style scoped>
 /** mc: main-container */
 .main-container {
-  /* background-color: #35495E; */
-  /* background-color: #35495E; */
-  background-color: #1F1F1F;
   color: #0078D4;
   height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 0 0 80px;
 }
 
 .mc-name {
