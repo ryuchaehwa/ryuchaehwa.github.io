@@ -45,7 +45,7 @@ let events = [
 .ci-timeline {
     width: 30%;
     /* background-color: lightblue; */
-    border-right: 1px solid #fff
+    border-right: 0.5px solid #ffffff50
 }
 
 .ci-content {

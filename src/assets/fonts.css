@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: "Paperozi";
+  font-family: "Paperozi-medium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2")
     format("woff2");
   font-weight: 500;
@@ -87,16 +87,17 @@
 }
 
 @font-face {
-  font-family: "MuseumCulturalFoundationClassic";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff")
+  font-family: "YeogiOttaeJalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
     format("woff");
-  font-weight: 700;
+  font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
-    font-family: 'YeogiOttaeJalnan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
+  font-family: "Ridibatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
 }
