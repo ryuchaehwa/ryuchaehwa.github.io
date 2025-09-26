@@ -1,6 +1,10 @@
 <template>
     <div class="section-title">프로젝트 Projects</div>
-    <div class="pi-container"></div>
+    <div class="pi-container">
+
+        
+
+    </div>
 </template>
 
 <style scoped>

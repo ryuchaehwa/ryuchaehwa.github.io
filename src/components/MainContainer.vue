@@ -1,25 +1,18 @@
 <template>
   <LeftSide></LeftSide>
-  <LangSet></LangSet>
+  <LangThemeSet></LangThemeSet>
   <div class="main-container">
     <div class="mc-items">
-      <PersonalInfo></PersonalInfo>
-      <SkillsInfo></SkillsInfo>
-      <CareerInfo></CareerInfo>
-      <ProjectsInfo></ProjectsInfo>
-      <PostsContainer></PostsContainer>
+      <router-view></router-view>
+      <!-- <MainComponents></MainComponents> -->
     </div>
   </div>
 </template>
 
 <script setup>
+// import MainComponents from './main/MainComponents.vue';
 import LeftSide from './common/LeftSide.vue';
-import LangSet from './common/LangSet.vue';
-import PersonalInfo from './main/PersonalInfo.vue';
-import SkillsInfo from './main/SkillsInfo.vue';
-import CareerInfo from './main/CareerInfo.vue'
-import ProjectsInfo from './main/ProjectsInfo.vue'
-import PostsContainer from './main/PostsContainer.vue'
+import LangThemeSet from './common/LangThemeSet.vue';
 </script>
 
 <style scoped>

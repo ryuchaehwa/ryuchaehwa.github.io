@@ -1,8 +1,14 @@
-<script setup></script>
-
 <template>
   <router-view></router-view>
 </template>
+
+<script setup>
+import { useThemeStore} from './pinia/theme.js'
+
+const themeStore = useThemeStore()
+console.log('---app:', themeStore)
+
+</script>
 
 <style>
 body {
@@ -10,6 +16,5 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100vw;
-  background-color: #1F1F1F;
 }
 </style>

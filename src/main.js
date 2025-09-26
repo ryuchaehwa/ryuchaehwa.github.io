@@ -8,6 +8,7 @@ import "./assets/css/main.css";
 import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
 import "primeicons/primeicons.css";
+// import "./assets/scss/main.scss";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import AnimateOnScroll from "primevue/animateonscroll";
