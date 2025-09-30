@@ -4,21 +4,19 @@
   <div class="main-container">
     <div class="mc-items">
       <router-view></router-view>
-      <!-- <MainComponents></MainComponents> -->
     </div>
   </div>
 </template>
 
 <script setup>
-// import MainComponents from './main/MainComponents.vue';
-import LeftSide from './common/LeftSide.vue';
-import LangThemeSet from './common/LangThemeSet.vue';
+import LeftSide from "./common/LeftSide.vue";
+import LangThemeSet from "./common/LangThemeSet.vue";
 </script>
 
 <style scoped>
 /** mc: main-container */
 .main-container {
-  color: #0078D4;
+  color: #0078d4;
   height: 100vh;
   padding: 0 0 0 80px;
 }
