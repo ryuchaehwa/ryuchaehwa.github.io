@@ -1,12 +1,23 @@
 <template>
-  <router-view></router-view>
+  <!-- <router-view v-bind:class="getCurrentThemeClass"></router-view> -->
+  <div v-bind:class="getCurrentThemeClass">
+    <router-view></router-view>
+  </div>
+
 </template>
 
 <script setup>
-import { useThemeStore} from './pinia/theme.js'
+import { useThemeStore } from './pinia/theme.js'
+import { computed } from 'vue'
+import { defineOptions } from 'vue';
+
+defineOptions({ inheritAttrs: false })
 
 const themeStore = useThemeStore()
-console.log('---app:', themeStore)
+
+let getCurrentThemeClass = computed(() => {
+  return themeStore.getCurrentThemeClass
+})
 
 </script>
 

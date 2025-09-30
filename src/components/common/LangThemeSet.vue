@@ -1,37 +1,39 @@
 <template>
     <div class="ls-container">
-        <span style="color: #fff">{{ storedTheme }}</span>
         <div class="btn-box">한국어</div>
         <div class="btn-box">EN</div>
-        <i :class="themeClassName" @click="changeTheme"></i>
+        <!-- {{ getCurrentThemeClass }} -->
+        <i :class="getCurrentThemeClass + ` ${themeIconClass}`" class="custom-icon" @click="changeTheme"></i>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { ref, computed } from 'vue'
 import { useThemeStore } from '../../pinia/theme'
 
 const themeStore = useThemeStore()
-let themeClassName = ref('pi pi-moon')
+let themeIconClass = ref('pi pi-moon')
 
-console.log(themeStore)
+let currentTheme = ref(0)
 
 function changeTheme() {
-    if (storedTheme.value === 0) {
-        console.log('themeClassNam 000000e',)
-        themeClassName.value = 'pi pi-moon theme-dark'
+    // console.log('changeTheme')
+    if (currentTheme === 0) {
+        themeIconClass.value = 'pi pi-sun'
+        themeStore.setCurrentTheme('theme-light')
+        currentTheme = 1
     } else {
-        console.log('themeClassNam11111e')
-        themeClassName.value = 'pi pi-sun theme-light'
+        themeIconClass.value = 'pi pi-moon'
+        themeStore.setCurrentTheme('theme-dark')
+        currentTheme = 0
     }
+
+    console.log("!", themeIconClass)
 }
 
-onMounted(() => {
-    changeTheme()
+let getCurrentThemeClass = computed(() => {
+    themeStore.getCurrentThemeClass
 })
-
-let storedTheme = computed(() => themeStore.getCurrentTheme)
-
 </script>
 
 
@@ -58,21 +60,6 @@ let storedTheme = computed(() => themeStore.getCurrentTheme)
 }
 
 .btn-box:hover {
-    /* background-color: #fff; */
-    cursor: pointer;
-    color: #0078D4
-}
-
-.theme-light {
-    color: #000
-}
-
-.theme-dark {
-    color: yellow
-}
-
-.theme-light:hover,
-.theme-dark:hover {
     cursor: pointer;
     color: #0078D4
 }

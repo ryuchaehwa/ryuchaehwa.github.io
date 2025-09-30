@@ -4,29 +4,21 @@ import { ref } from "vue";
 export const useThemeStore = defineStore("theme", {
   state: () => {
     return {
-      currentTheme: ref(0), // 0: dark, 1: light
+      currentThemeClass: ref("theme-dark"), // theme-dark, theme-light
+      currentThemeIconClass: ref("icon-dark"), // icon-dark, icon-light
     };
   },
 
   getters: {
-    getCurrentTheme: (state) => state.currentTheme,
     getCurrentThemeClass: (state) => {
-      let currentThemeClass = "";
-
-      if (state.currentTheme === 0) {
-        currentThemeClass = "theme-dark";
-      } else {
-        currentThemeClass = "theme-light";
-      }
-
-      return currentThemeClass;
+      state.currentThemeClass;
     },
   },
 
   actions: {
     setCurrentTheme(payload) {
-      console.log("setCurrentTheme", payload);
-      state.currentTheme = payload;
+      this.currentTheme = payload;
+      this.currentThemeIconClass = payload;
     },
   },
 });
